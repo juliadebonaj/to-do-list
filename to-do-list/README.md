@@ -2,12 +2,21 @@
 
 Um app de lista de tarefas multiusuário feito com HTML, CSS e Bootstrap 5.
 
-## Screenshots
+## Capturas de tela
 
+### Index
 ![Usuários](photos/index.png)
+
+### Adicionar novo usuário
 ![Novo usuário](photos/newuser.png)
+
+### Listas de tarefas do usuário
 ![Listas](photos/user.png)
+
+### Criar nova lista
 ![Nova lista](photos/newlist.png)
+
+### Lista de tarefas
 ![Tarefas](photos/list.png)
 
 ## Páginas
