@@ -1,0 +1,246 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background-color:white;
+    color:rgb(59, 89, 114);
+}
+
+.app-header {
+    background-color: rgb(159, 187, 210);
+    color: rgb(48, 72, 92);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.app-header p {
+    color: rgb(48, 72, 92);
+    font-weight: 400;
+}
+
+.app-navbar {
+    background-color: rgb(173, 199, 219);
+    margin-bottom: 40px;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(90, 115, 135);
+}
+
+.breadcrumb-nav {
+    font-size: 0.85rem;
+    color: rgb(125, 155, 180);
+}
+
+.breadcrumb-link {
+    color: rgb(48, 72, 92);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.btn-app {
+    background-color: rgb(173, 199, 219);
+    color: rgb(48, 72, 92);
+    border: none;
+    font-family: inherit;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-app:hover {
+    background-color: rgb(195, 210, 223);
+    color: rgb(48, 72, 92);
+}
+
+.btn-app-danger {
+    background-color: #f0c0c0;
+    color: #8b3a3a;
+    border: none;
+    font-family: inherit;
+}
+
+.btn-app-danger:hover {
+    background-color: #e0a0a0;
+    color: #8b3a3a;
+}
+
+.modal-input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid rgb(173, 199, 219);
+    border-radius: 8px;
+    color: rgb(48, 72, 92);
+    outline: none;
+    width: 100%;
+}
+
+.modal-input:focus {
+    border-color: rgb(125, 155, 180);
+}
+
+.task-progress-bar {
+    height: 6px;
+    background-color: rgb(210, 225, 235);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.task-progress-fill {
+    height: 100%;
+    background-color: rgb(173, 199, 219);
+    border-radius: 3px;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(173, 199, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+}
+
+.user-card {
+    background-color: rgb(235, 244, 250);
+}
+
+.user-card h3 {
+    color: rgb(48, 72, 92);
+}
+
+.user-card .text-muted-app {
+    color: rgb(125, 155, 180);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.list-card {
+    background-color: rgb(235, 244, 250);
+}
+
+.list-card h3 {
+    color: rgb(48, 72, 92);
+    font-size: 1.1rem;
+}
+
+.list-meta {
+    font-size: 0.85rem;
+    color: rgb(125, 155, 180);
+}
+
+.add-task-input {
+    flex: 1;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 1px solid rgb(173, 199, 219);
+    border-radius: 8px;
+    color: rgb(48, 72, 92);
+    outline: none;
+}
+
+.add-task-input:focus {
+    border-color: rgb(125, 155, 180);
+}
+
+.task-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-item.task-completed {
+    opacity: 0.6;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(173, 199, 219);
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.task-item.task-completed .task-checkbox {
+    background-color: rgb(173, 199, 219);
+    color: white;
+}
+
+.task-label {
+    flex: 1;
+    font-size: 1rem;
+    color: rgb(48, 72, 92);
+}
+
+.task-item.task-completed .task-label {
+    text-decoration: line-through;
+    color: rgb(125, 155, 180);
+}
+
+.section-title {
+    font-size: 0.9rem;
+    color: rgb(125, 155, 180);
+    margin: 20px 0 10px;
+}
+
+footer {
+    color: rgb(125, 155, 180);
+}
+
+@media (max-width: 900px) {
+    .user-card,
+    .list-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .app-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .list-summary-row {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .task-progress-bar {
+        width: 100%;
+    }
+
+    .add-task-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .app-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .user-avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
